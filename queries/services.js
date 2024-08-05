@@ -20,7 +20,7 @@ const getOneService = async (id) => {
 
 const addService = async (service) => { 
     try {
-    const newService = await db.one("INSERT INTO services (id, name, description, price, duration_minutes,category,is_popular) VALUES ($1,$2,$3,$4,$5,$6,$7) RETURNING *", [service.id, service.name, service.description, service.price, service.duration_minutes, service.category, service.is_popular])
+    const newService = await db.one("INSERT INTO services (name, description, price, duration_minutes,category,is_popular) VALUES ($1,$2,$3,$4,$5,$6) RETURNING *", [service.name, service.description, service.price, service.duration_minutes, service.category, service.is_popular])
 
     return newService
 

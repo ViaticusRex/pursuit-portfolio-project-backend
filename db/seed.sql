@@ -1,6 +1,6 @@
 \c manifestations_dev
 
-INSERT INTO services (name, description, price, duration_minutes, catergory, is_popular) 
+INSERT INTO services (name, description, price, duration_minutes, category, is_popular) 
 VALUES
 ('Classic Manicure', 'Basic nail shaping, cuticle care, and polish application', 35.00, 30, 'Manicure', true),
 ('Gel Manicure', 'Long-lasting gel polish application with nail prep', 55.00, 45, 'Manicure', true),

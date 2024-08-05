@@ -11,6 +11,6 @@ CREATE TABLE services (
   description TEXT,
   price FLOAT(2),
   duration_minutes INTEGER,
-  catergory VARCHAR(50),
+  category VARCHAR(50),
   is_popular BOOLEAN
 );
